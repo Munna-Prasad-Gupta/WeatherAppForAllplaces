@@ -1,0 +1,7 @@
+https://api.openweathermap.org/data/2.5/weather?q=pune&appid=c5033b44f6ae7ede5d9067f34293d02a
+
+
+https://api.openweathermap.org/data/2.5/weather?q=birgunj,+977&appid=c5033b44f6ae7ede5d9067f34293d02a
+
+
+https://api.openweathermap.org/data/2.5/weather?q=kalaiya,+977&units=metric&appid=c5033b44f6ae7ede5d9067f34293d02a

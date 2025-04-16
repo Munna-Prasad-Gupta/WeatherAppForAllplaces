@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headlinks}}
+</head>
+<body>
+      {{>navbar}}
+    
+    <!-- header code -->
+    <div class="container-fluid main_header" aria-hidden="true">
+      <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+              <div class="main_content">
+                <form class="temp_form">
+                    <input type="text" id="CityName" placeholder="Enter Your City Name" autocomplete="off">
+                    <input type="submit" value="Search" id="Submitbtn">
+                </form>
+              </div>
+
+              <div class="tempInfo">
+                <div class="top_layer">
+                    <p id="day"> Tuesday</p>
+                    <p id="today_date"> 13 Oct</p>
+                </div>
+                <div class="main_layer">
+                    <p id="city_name">Output Will Be Here</p>
+                    <div class="middle_layer data_hide">
+                        <p id="temp"><span id = "temp_real_val">0</span> <sup>o</sup>C</p>
+                        <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+      <!-- footer <code></code> -->
+     {{>footer}}
+
+     <script src="js/main.js"></script>
+       <script >
+        const date = new Date();
+
+const weekday = new Array(7);
+
+weekday[0] = "SUN";
+weekday[1] = "MON";
+weekday[2] = "TUE";
+weekday[3] = "WED";
+weekday[4] = "THU";
+weekday[5] = "FRI";
+weekday[6] = "SAT";
+
+// console.log(weekday[date.getDay()]);
+
+const month = new Array(12);
+month[0] = "JAN";
+month[1] = "FEB";
+month[2] = "MAR";
+month[3] = "APR";
+month[4] = "MAY";
+month[5] = "JUN";
+month[6] = "JUL";
+month[7] = "AUG";
+month[8] =  "OCT";
+month[10] = "NOV";
+month[11] = "DEC";
+
+
+const day = document.getElementById("day");
+day.innerHTML=weekday[date.getDay()];
+
+const today_date = document.getElementById('today_date');
+today_date.innerHTML= geteverything();
+
+
+function geteverything(){
+    return   date.getDate() + " " + month[date.getMonth()];
+}
+    </script>
+  </body>
+</html>

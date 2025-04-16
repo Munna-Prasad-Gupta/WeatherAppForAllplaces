@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headlinks}}
+</head>
+<body>
+
+   {{>navbar}}
+    
+    <!-- header code -->
+    <div class="container-fluid main_header">
+      <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+            <div class="row">
+              <!-- left side div -->
+              <div class="col-md-12 col-12 main_header_left align-items-center errimg">
+               <figure >
+                  <img src="/images/404err.png" alt="munna" class = "img-fluid " title="Munna">
+                    <h2 >{{errorMsg}}</h2>
+                     <a href="/" ><button>Go Back</button></a>
+               </figure>
+                </div>
+              </div>     
+          </div>
+      </div>
+    </div>
+      <!-- footer <code></code> -->
+      {{>footer}}
+  </body>
+</html>
